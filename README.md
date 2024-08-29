@@ -1,4 +1,4 @@
-NAME: V MYTHILI
+ NAME: V MYTHILI
 REG NO: 212223040123
 DEPT: COMPUTER SCIENCE AND ENGINEERING
 # Exno:1
@@ -170,7 +170,6 @@ df['M1']
 
 
 ```
-
 import pandas as pd
 df=pd.read_csv('SAMPLEIDS.csv')
 df.isnull()
@@ -262,6 +261,7 @@ sns.boxenplot(data=af)
 ```
 sns.scatterplot(data=af)
 ```
+
 q1=af.quantile(0.25)
 q2=af.quantile(0.5)
 q3=af.quantile(0.75)
@@ -287,6 +287,8 @@ outliers
 af=af[((af>=lower_bound)&(af<=upper_bound))]
 af# outliers values are replaced by nan
 ```
+
+
 ![image](https://github.com/user-attachments/assets/a71c7e76-cf8b-48df-a4bd-b5dd468947a4)
 
 ```
