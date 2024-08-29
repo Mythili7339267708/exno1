@@ -259,8 +259,6 @@ sns.boxenplot(data=af)
 ![image](https://github.com/user-attachments/assets/18ae56de-ff38-4227-afee-11d564393e6f)
 
 ```
-sns.scatterplot(data=af)
-```
 
 q1=af.quantile(0.25)
 q2=af.quantile(0.5)
