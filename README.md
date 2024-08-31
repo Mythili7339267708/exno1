@@ -350,5 +350,78 @@ sns.boxplot(x='sepal_width',data=delid)
 
 ![image](https://github.com/user-attachments/assets/26149c4f-d82a-4e52-ad51-87dbbb8bae15)
 
+```
+lower_bound = c1 - 1.5 * iq
+lower_bound
+upper_bound = c3 + 1.5 *iq
+upper_bound
+```
+
+![image](https://github.com/user-attachments/assets/c2b396eb-c602-4334-8fbf-c835797e1247)
+
+
+![image](https://github.com/user-attachments/assets/04c02270-e7d0-4c82-8429-e2b9345ca34a)
+
+
+# ACTIVITY
+
+```
+
+import pandas as pd 
+df =pd.read_csv('bank_train (1).csv')
+df
+```
+
+![image](https://github.com/user-attachments/assets/2722ddea-d28a-4368-b869-db762e0e072c)
+
+
+
+```
+df.loc[(df['education']=='primary')&(df['deposit']=='yes')]
+#select the rows where clients with primary education have subscribed to a deposit?
+```
+
+![image](https://github.com/user-attachments/assets/5386fc52-b46f-43c4-b759-27183364e3e4)
+
+
+```
+df.loc[(df['deposit']=='no')]
+#select the rows where the client who have not subscribed to a deposit?
+```
+![image](https://github.com/user-attachments/assets/058a01a9-4322-4c6d-9304-c5e340d61415)
+
+
+```
+df.loc[(df['deposit']=='yes')&((df['housing']=='yes')|(df['loan']=='yes'))]
+# select the rows where clients who have subscribed to a deposit either have a housing or a personal loan?
+```
+
+![image](https://github.com/user-attachments/assets/9a7a14ff-ac52-4823-8a71-c752fc0b771d)
+
+
+```
+df.loc[(df['education']=='secondary')&(df['deposit']=='no')]
+#select the rows where clients with secondary education who have not subscribed to a deposit?
+```
+
+![image](https://github.com/user-attachments/assets/b926aee1-7cb6-42ab-b425-715251460a37)
+
+
+```
+#select the rows where  clients who have subscribed to a term deposit as an outcome of the successful marketing campaign? 
+df.loc[(df['poutcome']=='success')&(df['deposit']=='yes')]
+```
+
+![image](https://github.com/user-attachments/assets/2015af51-cc50-48b1-af07-95b9996177e1)
+
+
+```
+#select the rows where unemployed clients who have not subscribed to deposit?
+df.loc[(df['job']=='unemployed')&(df['deposit']=='no')]
+```
+
+![image](https://github.com/user-attachments/assets/4a6a2597-ac19-4d44-a136-c647e7e7494d)
+
+
 # Result
                Thus we have cleaned the data and removed the outliers by detection using IQR and Z-score method.
