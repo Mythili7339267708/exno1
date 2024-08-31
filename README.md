@@ -24,6 +24,8 @@ STEP 5: Remove outliers using IQR
 STEP 6: Use zscore of to remove outliers
 
 # Coding and Output
+
+# SAMPLEIDS FILE
 ```
 import pandas as pd
 df=pd.read_csv('SAMPLEIDS.csv')
@@ -295,7 +297,7 @@ sns.boxplot(data=af)
 
 ![image](https://github.com/user-attachments/assets/492b5370-f91e-409f-b11f-4afb1d4fb1ad)
 
-
+# IRIS FILE
 ```
 id=pd.read_csv("iris.csv")
 id
