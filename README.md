@@ -2,8 +2,7 @@
 <H3>REG NO: 212223040123</H3>
 <H3>EX NO: 1</H3>
 
-# Exno:1
-Data Cleaning Process
+# Data Cleaning Process
 
 # AIM
 To read the given data and perform data cleaning and save the cleaned data to a file.
